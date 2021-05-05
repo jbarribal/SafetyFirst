@@ -1,0 +1,4 @@
+com/example/safetyfirst/MainActivity.java
+ com.example.safetyfirst.MainActivity
+com/example/safetyfirst/BuildConfig.java
+ com.example.safetyfirst.BuildConfig
