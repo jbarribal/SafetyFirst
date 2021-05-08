@@ -19,6 +19,12 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.SafetyFirst" >
+        <activity android:name="com.example.safetyfirst.EarthquakeModule" >
+        </activity>
+        <activity android:name="com.example.safetyfirst.ShooterGame" >
+        </activity>
+        <activity android:name="com.example.safetyfirst.MazeGame" >
+        </activity>
         <activity android:name="com.example.safetyfirst.DisasterPage" >
         </activity>
         <activity android:name="com.example.safetyfirst.PreTest" >

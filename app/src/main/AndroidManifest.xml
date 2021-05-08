@@ -9,6 +9,8 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/Theme.SafetyFirst">
+        <activity android:name=".EarthquakeModule">
+        </activity>
         <activity android:name=".ShooterGame">
         </activity>
         <activity android:name=".MazeGame">

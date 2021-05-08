@@ -2162,8 +2162,11 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_disaster_page
+layout activity_earthquake_module
 layout activity_main
+layout activity_maze_game
 layout activity_pre_test
+layout activity_shooter_game
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
