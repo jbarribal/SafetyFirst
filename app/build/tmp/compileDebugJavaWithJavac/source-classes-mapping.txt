@@ -1,7 +1,10 @@
 com/example/safetyfirst/PreTest.java
  com.example.safetyfirst.PreTest
+ com.example.safetyfirst.PreTest$1
 com/example/safetyfirst/MainActivity.java
  com.example.safetyfirst.MainActivity
  com.example.safetyfirst.MainActivity$1
 com/example/safetyfirst/BuildConfig.java
  com.example.safetyfirst.BuildConfig
+com/example/safetyfirst/DisasterPage.java
+ com.example.safetyfirst.DisasterPage

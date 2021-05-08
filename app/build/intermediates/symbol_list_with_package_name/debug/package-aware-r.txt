@@ -1773,7 +1773,11 @@ id beginning
 id blocking
 id bottom
 id bounce
+id btnEarthquake
+id btnFire
+id btnFlood
 id btnStart
+id btnTest
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -2157,6 +2161,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_disaster_page
 layout activity_main
 layout activity_pre_test
 layout custom_dialog

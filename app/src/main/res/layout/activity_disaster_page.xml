@@ -5,6 +5,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#faf3f3"
         tools:context=".DisasterPage">
 
     <Button
@@ -16,6 +17,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/btnEarthquake"
             android:layout_above="@+id/btnFire"
+            android:background="#da7f8f"
             android:layout_marginBottom="30dp"/>
     <Button
             android:text="FIRE"
@@ -24,10 +26,13 @@
             android:fontFamily="@font/colombosansfont"
             android:layout_height="wrap_content"
             android:id="@+id/btnFire"
+            android:background="#da7f8f"
             android:layout_centerInParent="true" />
     <Button
             android:text="FLOOD"
+
             android:layout_width="350dp"
+            android:background="#da7f8f"
             android:textSize="20pt"
             android:layout_centerHorizontal="true"
             android:fontFamily="@font/colombosansfont"
