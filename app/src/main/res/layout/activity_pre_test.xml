@@ -10,5 +10,66 @@
     <Button
             android:text="Button"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btnTest"/>
+            android:layout_height="wrap_content"
+            android:id="@+id/btnTest"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="49dp"/>
+    <TextView
+            android:text="Question"
+            android:textSize="15pt"
+            android:fontFamily="@font/colombosansfont"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtQuestion"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="340dp" />
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoice3"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="68dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="188dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoice1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="591dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoice2"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="162dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="188dp"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnChoice0"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="164dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="592dp"/>
+    <TextView
+            android:text="Score"
+            android:fontFamily="@font/colombosansfont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtScoreView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="385dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="754dp"/>
 </RelativeLayout>
