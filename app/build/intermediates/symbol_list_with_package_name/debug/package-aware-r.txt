@@ -1773,10 +1773,10 @@ id beginning
 id blocking
 id bottom
 id bounce
-id btnChoice0
 id btnChoice1
 id btnChoice2
 id btnChoice3
+id btnChoice4
 id btnEarthquake
 id btnFire
 id btnFlood

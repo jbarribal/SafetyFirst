@@ -1772,10 +1772,10 @@ int id beginning 0x7f090053
 int id blocking 0x7f090054
 int id bottom 0x7f090055
 int id bounce 0x7f090056
-int id btnChoice0 0x7f090057
-int id btnChoice1 0x7f090058
-int id btnChoice2 0x7f090059
-int id btnChoice3 0x7f09005a
+int id btnChoice1 0x7f090057
+int id btnChoice2 0x7f090058
+int id btnChoice3 0x7f090059
+int id btnChoice4 0x7f09005a
 int id btnEarthquake 0x7f09005b
 int id btnFire 0x7f09005c
 int id btnFlood 0x7f09005d

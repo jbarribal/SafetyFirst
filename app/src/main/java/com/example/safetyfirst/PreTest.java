@@ -5,29 +5,36 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import org.w3c.dom.Text;
+
+import java.util.Random;
 
 public class PreTest extends AppCompatActivity {
 
     /** Try button */
     private Button btnTest;
 
-    private PreQuiz mQuestionLibrary = new PreQuiz();
 
 
-    private Button btnChoice0;
+
     private Button btnChoice1;
     private Button btnChoice2;
     private Button btnChoice3;
+    private Button btnChoice4;
 
     private TextView txtScoreView;
     private TextView txtQuestion;
 
-    private String Answer;
-    private int Score = 0;
-    private int QuestionNumber = 0;
+    private Questions mQuestions = new Questions();
+
+    private String mAnswer;
+    private int mScore = 0;
+    private int mQuestionLength = mQuestions.mQuestions.length;
+
+    Random r;
 
 
 
@@ -38,79 +45,85 @@ public class PreTest extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pre_test);
 
+        r = new Random();
+
         final Button btnTest = (Button) findViewById(R.id.btnTest);
-        final Button btnChoice0 = (Button) findViewById(R.id.btnChoice0);
         final Button btnChoice1 = (Button) findViewById(R.id.btnChoice1);
         final Button btnChoice2 = (Button) findViewById(R.id.btnChoice2);
         final Button btnChoice3 = (Button) findViewById(R.id.btnChoice3);
+        final Button btnChoice4 = (Button) findViewById(R.id.btnChoice4);
         final TextView txtQuestion = (TextView) findViewById(R.id.txtQuestion);
-        final TextView ScoreView = (TextView) findViewById(R.id.txtScoreView);
+        final TextView txtScoreView = (TextView) findViewById(R.id.txtScoreView);
+
+        txtScoreView.setText("Score" + mScore);
+
+        updateQuestion(r.nextInt(mQuestionLength));
 
 
-
-        //For Button0
-        btnChoice0.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(btnChoice0.getText() == Answer) {
-                    Score = Score + 1;
-                    updateScore(Score);
-                    updateQuestion();
-                    Toast.makeText(PreTest.this, "correct", Toast.LENGTH_SHORT).show();
-                }
-                else {
-                    Toast.makeText(PreTest.this, "wrong", Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-
-        //For Button1
         btnChoice1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(btnChoice1.getText() == Answer) {
-                    Score = Score + 1;
-                    updateScore(Score);
-                    updateQuestion();
-                    Toast.makeText(PreTest.this, "correct", Toast.LENGTH_SHORT).show();
+                if(btnChoice1.getText() == mAnswer) {
+                    mScore++;
+                    txtScoreView.setText("Score" + mScore);
+                    updateQuestion(r.nextInt(mQuestionLength));
                 }
                 else {
-                    Toast.makeText(PreTest.this, "wrong", Toast.LENGTH_SHORT).show();
+                    updateQuestion(r.nextInt(mQuestionLength));
+
                 }
             }
         });
 
-        //For Button2
         btnChoice2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(btnChoice2.getText() == Answer) {
-                    Score = Score + 1;
-                    updateScore(Score);
-                    updateQuestion();
-                    Toast.makeText(PreTest.this, "correct", Toast.LENGTH_SHORT).show();
+                if(btnChoice2.getText() == mAnswer) {
+                    mScore++;
+                    txtScoreView.setText("Score" + mScore);
+                    updateQuestion(r.nextInt(mQuestionLength));
                 }
                 else {
-                    Toast.makeText(PreTest.this, "wrong", Toast.LENGTH_SHORT).show();
+                    updateQuestion(r.nextInt(mQuestionLength));
+
                 }
             }
         });
 
-        //For Button3
         btnChoice3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(btnChoice3.getText() == Answer) {
-                    Score = Score + 1;
-                    updateScore(Score);
-                    updateQuestion();
-                    Toast.makeText(PreTest.this, "correct", Toast.LENGTH_SHORT).show();
+                if (btnChoice3.getText() == mAnswer) {
+                    mScore++;
+                    txtScoreView.setText("Score" + mScore);
+                    updateQuestion(r.nextInt(mQuestionLength));
                 }
                 else {
-                    Toast.makeText(PreTest.this, "wrong", Toast.LENGTH_SHORT).show();
+                    updateQuestion(r.nextInt(mQuestionLength));
+
                 }
             }
         });
+
+        btnChoice4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(btnChoice4.getText() == mAnswer) {
+                    mScore++;
+                    txtScoreView.setText("Score" + mScore);
+                    updateQuestion(r.nextInt(mQuestionLength));
+                }
+                else {
+                    updateQuestion(r.nextInt(mQuestionLength));
+
+                }
+            }
+        });
+
+
+
+
+
 
 
 
@@ -123,19 +136,17 @@ public class PreTest extends AppCompatActivity {
         });
     }
 
-    private void updateQuestion(){
-        txtQuestion.setText(mQuestionLibrary.getQuestion(QuestionNumber));
-        btnChoice0.setText(mQuestionLibrary.getChoice0(QuestionNumber));
-        btnChoice1.setText(mQuestionLibrary.getChoice1(QuestionNumber));
-        btnChoice2.setText(mQuestionLibrary.getChoice2(QuestionNumber));
-        btnChoice3.setText(mQuestionLibrary.getChoice3(QuestionNumber));
+    private void updateQuestion(int num) {
+        txtQuestion.setText(mQuestions.getQuestion(num));
+        btnChoice1.setText(mQuestions.getChoice1(num));
+        btnChoice2.setText(mQuestions.getChoice2(num));
+        btnChoice3.setText(mQuestions.getChoice3(num));
+        btnChoice4.setText(mQuestions.getChoice4(num));
 
-        Answer = mQuestionLibrary.getCorrectAnswer(QuestionNumber);
-        QuestionNumber++;
-
+        mAnswer = mQuestions.getCorrectAnswer(num);
     }
 
-    private void updateScore(int point) {
-        txtScoreView.setText("" + Score);
-    }
+
+
+
 }
