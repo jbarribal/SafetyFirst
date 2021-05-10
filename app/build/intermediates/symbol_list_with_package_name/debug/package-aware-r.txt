@@ -1753,6 +1753,7 @@ id action_mode_close_button
 id action_text
 id actions
 id activity_chooser_view_content
+id activity_quiz
 id add
 id alertTitle
 id aligned
@@ -1777,7 +1778,6 @@ id btnEarthquake
 id btnFire
 id btnFlood
 id btnStart
-id btnTest
 id buttonPanel
 id cache_measures
 id cancel_button
@@ -1793,6 +1793,10 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id choice1
+id choice2
+id choice3
+id choice4
 id chronometer
 id circle_center
 id clear_text
@@ -1890,6 +1894,8 @@ id labelGroup
 id labeled
 id largeLabel
 id layout
+id layout1
+id layout2
 id left
 id leftToRight
 id line1
@@ -1979,6 +1985,7 @@ id position
 id postLayout
 id progress_circular
 id progress_horizontal
+id question
 id radio
 id ratio
 id rectangles
@@ -1993,6 +2000,8 @@ id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
 id scale
+id score
+id score_text
 id screen
 id scroll
 id scrollIndicatorDown
@@ -2163,7 +2172,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_disaster_page
 layout activity_main
-layout activity_pre_test
+layout activity_maze_game
+layout activity_quiz
+layout activity_shooter_game
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

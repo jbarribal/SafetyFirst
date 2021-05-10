@@ -103,7 +103,7 @@ public class QuizActivity extends AppCompatActivity {
             }
         });
 
-        //End of Button Listener for Button3
+        //End of Button Listener for Button4
 
         mButtonChoice4.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -135,6 +135,7 @@ public class QuizActivity extends AppCompatActivity {
         mButtonChoice1.setText(mQuestionLibrary.getChoice1(mQuestionNumber));
         mButtonChoice2.setText(mQuestionLibrary.getChoice2(mQuestionNumber));
         mButtonChoice3.setText(mQuestionLibrary.getChoice3(mQuestionNumber));
+        mButtonChoice4.setText(mQuestionLibrary.getChoice4(mQuestionNumber));
 
         mAnswer = mQuestionLibrary.getCorrectAnswer(mQuestionNumber);
         mQuestionNumber++;
