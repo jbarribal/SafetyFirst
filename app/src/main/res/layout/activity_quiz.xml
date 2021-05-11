@@ -20,6 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Score"
+            android:fontFamily="@font/colombosansfont"
             android:textSize="20sp"
             android:layout_alignParentLeft="true"
             android:id="@+id/score_text"/>
@@ -27,6 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/score"
+            android:fontFamily="@font/colombosansfont"
             android:layout_alignParentRight="true"
             android:text="0"
             android:textSize="20sp"/>
@@ -34,6 +36,7 @@
         <TextView
             android:id="@+id/question"
             android:layout_width="match_parent"
+            android:fontFamily="@font/colombosansfont"
             android:layout_height="70dp"
             android:gravity="center"
             android:layout_marginBottom="40dp"
@@ -57,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:background="#0091EA"
+            android:fontFamily="@font/colombosansfont"
             android:padding="8dp"
             android:text="A"
             android:textColor="#fff" />
@@ -65,6 +69,7 @@
             android:id="@+id/choice2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/colombosansfont"
             android:layout_marginBottom="24dp"
             android:background="#0091EA"
             android:padding="8dp"
@@ -85,6 +90,7 @@
         <Button
             android:id="@+id/choice3"
             android:layout_width="match_parent"
+            android:fontFamily="@font/colombosansfont"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:background="#0091EA"
@@ -98,6 +104,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:background="#0091EA"
+            android:fontFamily="@font/colombosansfont"
             android:padding="8dp"
             android:text="D"
             android:textColor="#fff" />
