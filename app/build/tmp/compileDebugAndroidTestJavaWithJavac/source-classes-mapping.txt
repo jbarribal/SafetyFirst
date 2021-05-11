@@ -1,0 +1,4 @@
+com/example/safetyfirst/test/BuildConfig.java
+ com.example.safetyfirst.test.BuildConfig
+com/example/safetyfirst/ExampleInstrumentedTest.java
+ com.example.safetyfirst.ExampleInstrumentedTest
